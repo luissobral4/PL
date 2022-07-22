@@ -1,0 +1,2 @@
+open("matricula.txt","r")
+
