@@ -1,0 +1,27 @@
+def main 
+    declarations 
+        int res;
+        int b;
+        int e;
+        int i=1;
+    end
+    instructions
+        call potencia;
+
+        print "Potencia: ";
+        print res;
+    end
+end
+
+def potencia
+    print "Introduza uma base:";
+    input b;
+    print "Introduza um expoente:";
+    input e;
+
+    res = b;
+    repeat
+        res = res * b;
+        i = i+1;
+    until(i==e) end
+end

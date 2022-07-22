@@ -1,0 +1,69 @@
+pushi 0
+pushi 0
+pushi 0
+start
+pushs "Introduza um inteiro N:"
+writes
+pushs "\n"
+writes
+pushs ">> "
+writes
+read
+atoi
+storeg 0
+pushg 0
+pushi 0
+sup
+jz endif2
+pushs "Introduza N numeros:"
+writes
+pushs "\n"
+writes
+pushs ">> "
+writes
+read
+atoi
+storeg 2
+pushg 0
+pushi 1
+sub
+storeg 0
+pushg 0
+pushi 0
+sup
+jz endif1
+cycle0:
+pushs ">> "
+writes
+read
+atoi
+storeg 1
+pushg 1
+pushg 2
+inf
+jz endif0
+pushg 1
+storeg 2
+
+endif0:
+pushg 0
+pushi 1
+sub
+storeg 0
+pushg 0
+pushi 0
+equal
+jz cycle0
+
+endif1:
+pushs "Numero menor:"
+writes
+pushs "\n"
+writes
+pushg 2
+writei
+pushs "\n"
+writes
+
+endif2:
+stop

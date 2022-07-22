@@ -1,0 +1,75 @@
+pushi 0
+pushi 4
+pushn 4
+start
+pushs "Introduza 4 lados"
+writes
+pushs "\n"
+writes
+cycle0:
+pushs ">> "
+writes
+pushgp
+pushi 2
+padd
+pushg 0
+read
+atoi
+storen
+pushg 0
+pushi 1
+add
+storeg 0
+pushg 0
+pushg 1
+equal
+jz cycle0
+pushgp
+pushi 2
+padd
+pushi 0
+loadn
+pushgp
+pushi 2
+padd
+pushi 1
+loadn
+equal
+pushgp
+pushi 2
+padd
+pushi 0
+loadn
+pushgp
+pushi 2
+padd
+pushi 2
+loadn
+equal
+mul
+pushgp
+pushi 2
+padd
+pushi 0
+loadn
+pushgp
+pushi 2
+padd
+pushi 3
+loadn
+equal
+mul
+jz else0
+pushs "Os 4 lados formam um quadrado"
+writes
+pushs "\n"
+writes
+jump endif0
+else0:
+pushs "Os 4 lados nao formam um quadrado"
+writes
+pushs "\n"
+writes
+
+endif0:
+stop

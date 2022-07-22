@@ -1,0 +1,31 @@
+pushi 10
+pushi 1
+pushi 0
+start
+cycle0:
+pushs ">> "
+writes
+read
+atoi
+storeg 2
+pushg 1
+pushg 2
+mul
+storeg 1
+pushg 0
+pushi 1
+sub
+storeg 0
+pushg 0
+pushi 0
+equal
+jz cycle0
+pushs "Produtorio:"
+writes
+pushs "\n"
+writes
+pushg 1
+writei
+pushs "\n"
+writes
+stop

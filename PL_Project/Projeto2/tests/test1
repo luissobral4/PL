@@ -1,0 +1,21 @@
+def main
+    declarations
+        int i;
+        int tamanho = 4;
+        int lados[4];
+    end
+    instructions
+        print "Introduza 4 lados";
+
+        repeat
+            input lados[i];
+            i = i + 1;
+        until (i==tamanho) end
+
+        if(lados[0]==lados[1] and lados[0]==lados[2] and lados[0]==lados[3]) then
+            print "Os 4 lados formam um quadrado";
+        else
+            print "Os 4 lados nao formam um quadrado";
+        end
+    end
+end
